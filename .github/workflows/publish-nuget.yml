@@ -66,13 +66,11 @@ jobs:
         git commit -m "chore: bump version $($pub.Version)"
         git push
 
-    # net11.0-ios and net11.0-tvos need the .NET 11 preview SDK; track the preview channel (matches
-    # the monorepo's publish_nugets.yml) so each new preview is picked up automatically.
+    # net11.0-ios and net11.0-tvos need the .NET 11 SDK.
     - name: Setup .NET
       uses: actions/setup-dotnet@v6
       with:
         dotnet-version: '11.0'
-        dotnet-quality: preview
 
     - name: Install the .NET iOS and tvOS workloads
       run: dotnet workload install ios tvos
