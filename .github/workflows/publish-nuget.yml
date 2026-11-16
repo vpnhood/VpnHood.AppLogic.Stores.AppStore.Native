@@ -1,5 +1,5 @@
-# Packs and publishes VpnHood.AppLib.Stores.AppStore.Native (formerly VpnHood.AppLib.Ios.StoreKitNative) to nuget.org. Same pattern as the
-# other VpnHood single-package repos (e.g. VpnHood.AppLib.Assets.IpLocations): every push to
+# Packs and publishes VpnHood.AppLogic.Stores.AppStore.Native (formerly VpnHood.AppLib.Stores.AppStore.Native, and before that VpnHood.AppLib.Ios.StoreKitNative) to nuget.org. Same pattern as the
+# other VpnHood single-package repos (e.g. VpnHood.Net.IpLocations.Assets.Ip2LocationLite): every push to
 # main bumps pub/PubVersion.json, stamps the csproj, commits the bump, packs, and pushes the
 # package. Runs on windows-latest — the committed xcframework means packing net11.0-ios and
 # net11.0-tvos only needs their workloads, never a Mac.
@@ -27,7 +27,7 @@ jobs:
       BUILD_CONFIG: 'Release'
       DOTNET_NOLOGO: '1'
       DOTNET_CLI_TELEMETRY_OPTOUT: '1'
-      CSPROJ: VpnHood.AppLib.Stores.AppStore.Native/VpnHood.AppLib.Stores.AppStore.Native.csproj
+      CSPROJ: VpnHood.AppLogic.Stores.AppStore.Native/VpnHood.AppLogic.Stores.AppStore.Native.csproj
 
     steps:
     - name: Checkout
@@ -85,7 +85,7 @@ jobs:
       run: dotnet pack ${{ env.CSPROJ }} --no-build --configuration ${{ env.BUILD_CONFIG }}
 
     # Trusted publishing: exchange the workflow's OIDC token for a short-lived nuget.org
-    # API key (policy: vpnhood/VpnHood.AppLib.Stores.AppStore.Native + publish-nuget.yml). No
+    # API key (policy: vpnhood/VpnHood.AppLogic.Stores.AppStore.Native + publish-nuget.yml). No
     # long-lived NUGET_API_KEY secret anywhere.
     - name: NuGet login (trusted publishing)
       if: github.event_name != 'pull_request'

@@ -1,4 +1,4 @@
-namespace VpnHood.AppLib.Stores.AppStore.Native;
+namespace VpnHood.AppLogic.Stores.AppStore.Native;
 
 /// <summary>A subscription offer, as StoreKit 2 reports it.</summary>
 public class StoreKitOffer

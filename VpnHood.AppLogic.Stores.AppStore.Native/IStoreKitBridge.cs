@@ -1,6 +1,6 @@
 using System.Runtime.Versioning;
 
-namespace VpnHood.AppLib.Stores.AppStore.Native;
+namespace VpnHood.AppLogic.Stores.AppStore.Native;
 
 /// <summary>
 /// StoreKit 2 as it is, as a seam: the native implementation crosses into the VpnHoodStoreKit

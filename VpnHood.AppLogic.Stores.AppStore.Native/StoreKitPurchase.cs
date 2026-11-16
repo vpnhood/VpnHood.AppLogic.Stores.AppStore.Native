@@ -1,4 +1,4 @@
-namespace VpnHood.AppLib.Stores.AppStore.Native;
+namespace VpnHood.AppLogic.Stores.AppStore.Native;
 
 /// <summary>The outcome of a StoreKit 2 purchase.</summary>
 public class StoreKitPurchase

@@ -4,7 +4,7 @@
 # facade: one slice for each of iOS, the iOS simulator, tvOS and the tvOS
 # simulator. Run ON A MAC with Xcode 15+:
 #
-#   cd VpnHood.AppLib.Stores.AppStore.Native/swift && ./build-xcframework.sh
+#   cd VpnHood.AppLogic.Stores.AppStore.Native/swift && ./build-xcframework.sh
 #
 # Output lands at swift/VpnHoodStoreKit.xcframework, where the csproj's
 # NativeReference picks it up. Commit the built xcframework (it is small and

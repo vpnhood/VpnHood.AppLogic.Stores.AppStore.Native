@@ -1,4 +1,4 @@
-namespace VpnHood.AppLib.Stores.AppStore.Native;
+namespace VpnHood.AppLogic.Stores.AppStore.Native;
 
 /// <summary>An auto-renewable subscription's terms, as StoreKit 2 reports them.</summary>
 public class StoreKitSubscription

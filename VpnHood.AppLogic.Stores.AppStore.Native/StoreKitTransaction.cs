@@ -1,4 +1,4 @@
-namespace VpnHood.AppLib.Stores.AppStore.Native;
+namespace VpnHood.AppLogic.Stores.AppStore.Native;
 
 /// <summary>A transaction StoreKit 2 has verified on the device.</summary>
 public class StoreKitTransaction

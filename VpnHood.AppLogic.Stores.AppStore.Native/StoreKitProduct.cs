@@ -1,4 +1,4 @@
-namespace VpnHood.AppLib.Stores.AppStore.Native;
+namespace VpnHood.AppLogic.Stores.AppStore.Native;
 
 /// <summary>A product as StoreKit 2 reports it, of any type.</summary>
 public class StoreKitProduct

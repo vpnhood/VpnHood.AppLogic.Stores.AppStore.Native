@@ -1,7 +1,8 @@
-# VpnHood.AppLib.Stores.AppStore.Native
+# VpnHood.AppLogic.Stores.AppStore.Native
 
-Formerly `VpnHood.AppLib.Ios.StoreKitNative`: the id and the namespace changed in 2026-09 so that no
-VpnHood package id starts with an OS. The namespace is the package id.
+Formerly `VpnHood.AppLib.Stores.AppStore.Native` (2026-11, when VpnHood's AppLib became AppLogic), and before
+that `VpnHood.AppLib.Ios.StoreKitNative` (2026-09, so that no VpnHood package id starts with an OS). The
+namespace is the package id.
 
 StoreKit 2 for .NET iOS and tvOS, self-contained in one NuGet:
 
@@ -39,7 +40,7 @@ callback, statically linked into the app binary (`DllImport "__Internal"`).
 ## Usage
 
 ```xml
-<PackageReference Include="VpnHood.AppLib.Stores.AppStore.Native" Version="x.y.z" />
+<PackageReference Include="VpnHood.AppLogic.Stores.AppStore.Native" Version="x.y.z" />
 ```
 
 ```csharp
@@ -69,10 +70,10 @@ Rebuilding the native facade (only when `StoreKitBridge.swift` changes) needs a
 Mac with Xcode 15+, or the `build-xcframework` GitHub workflow:
 
 ```bash
-cd VpnHood.AppLib.Stores.AppStore.Native/swift && ./build-xcframework.sh
+cd VpnHood.AppLogic.Stores.AppStore.Native/swift && ./build-xcframework.sh
 ```
 
-See [swift/README.md](https://github.com/vpnhood/VpnHood.AppLib.Stores.AppStore.Native/blob/main/VpnHood.AppLib.Stores.AppStore.Native/swift/README.md) for
+See [swift/README.md](https://github.com/vpnhood/VpnHood.AppLogic.Stores.AppStore.Native/blob/main/VpnHood.AppLogic.Stores.AppStore.Native/swift/README.md) for
 design notes.
 
 ## Publishing
@@ -83,4 +84,4 @@ version and upgrade deliberately — the package intentionally changes rarely.
 
 ## License
 
-[LGPL-2.1](https://github.com/vpnhood/VpnHood.AppLib.Stores.AppStore.Native/blob/main/LICENSE)
+[LGPL-2.1](https://github.com/vpnhood/VpnHood.AppLogic.Stores.AppStore.Native/blob/main/LICENSE)

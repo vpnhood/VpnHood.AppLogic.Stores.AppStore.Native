@@ -3,7 +3,7 @@ using System.Runtime.Versioning;
 using System.Text.Json;
 using ObjCRuntime;
 
-namespace VpnHood.AppLib.Stores.AppStore.Native;
+namespace VpnHood.AppLogic.Stores.AppStore.Native;
 
 /// <summary>
 /// Binding to the VpnHoodStoreKit Swift facade (swift/VpnHoodStoreKit): plain
